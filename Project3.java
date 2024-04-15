@@ -159,15 +159,13 @@ class Project3 {
             }
 
             // Job arrives
-            if (nextJobIdx < sortedJobs.size()) {
-                if (curTime == sortedJobs.get(nextJobIdx).startTime) {
-                    // TEST
-                    // System.out.println("Job arrives: " + curTime + " / " +
-                    // sortedJobs.get(nextJobIdx));
+            while (nextJobIdx < sortedJobs.size() && curTime == sortedJobs.get(nextJobIdx).startTime) {
+                // TEST
+                // System.out.println("Job arrives: " + curTime + " / " +
+                // sortedJobs.get(nextJobIdx));
 
-                    queue.add(sortedJobs.get(nextJobIdx));
-                    nextJobIdx++;
-                }
+                queue.add(sortedJobs.get(nextJobIdx));
+                nextJobIdx++;
             }
 
             // TEST
