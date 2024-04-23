@@ -26,20 +26,20 @@ class Project3 {
         printSchedule(s);
 
         s = rr(1);
-        System.out.println("\nRR\n");
+        System.out.println("\nRR (q=1)\n");
         printSchedule(s);
 
-        // s = rr(2);
-        // System.out.println("\nRR (q=2)\n");
-        // printSchedule(s);
+        s = rr(2);
+        System.out.println("\nRR (q=2)\n");
+        printSchedule(s);
 
-        // s = rr(3);
-        // System.out.println("\nRR (q=3)\n");
-        // printSchedule(s);
+        s = rr(3);
+        System.out.println("\nRR (q=3)\n");
+        printSchedule(s);
 
-        // s = rr(4);
-        // System.out.println("\nRR (q=4)\n");
-        // printSchedule(s);
+        s = rr(4);
+        System.out.println("\nRR (q=4)\n");
+        printSchedule(s);
     }
 
     private static HashMap<Character, Job> jobs = new HashMap<>();
